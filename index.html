@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CEM Apps Automation</title>
+    <link rel="icon" type="image/png" href="./cem-logo.png" />
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: rgb(141, 19, 254);">
+        <div class="container-fluid">
+            <a class="navbar-brand h1" target="_blank" style="color: white; font-size: 1.5rem;" href="https://cit.gg/index.php?board=598.0">CEM Applications Logs Assistant</a>  
+        </div>
+        <!-- Navbar content -->
+      </nav>
+    
+    <form class="m-4 row row-cols-lg-auto g-3 align-items-center">
+        <input type="text" placeholder="Paste your logs here" id="logs-input" class="form-control">
+        <button type="button" class="ms-2 parse btn btn-primary" onclick="getLogs(); getLoginHits(); displayLoginHits(); displayEventWarps()">Parse</button>
+        <button type="button" class="ms-2 clear btn btn-danger" onclick="clearEverything()">Clear</button>
+    </form>
+
+    <div class="ms-4 me-4 view-wrapper">
+        <textarea class="logs-para form-control" rows="15" placeholder="Login hits shall be shown here" readonly></textarea>
+        <textarea class="em-warps-view form-control" rows="15" placeholder="Event warps shall be shown here" readonly></textarea>
+    </div>
+    <div class="ms-3 data-wrapper" style="font-size: 1.5rem;">
+        <p class="login-hits">Login Hits:</p>
+        <p class="hours-b2m">Hours before 2 months and Hours Currently:</p>
+        <p class="hours-login-comparison">Hours and LOGIN hits comparison: </p>
+        <p class="em-warps">Times Used /eventwarp: </p>
+    </div>
+
+<div class="me-4 copyright">
+    <img src="./cem-logo.png" alt="" width="100" height="50">
+</div>
+<p class="dev me-4" style="text-align: right;">Developed by Zombiie</p>
+
+    <script src="./main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</body>
+</html>
